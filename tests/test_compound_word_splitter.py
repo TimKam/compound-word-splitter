@@ -35,7 +35,6 @@ def test_split_ends_with_s():
 # should split German compound word that consists of three dictionary words
 def test_split_german_three_compounds():
     split_result = split('Effektivitätsberechnungsformular', 'de_de')
-    print split_result
     assert split_result[0] == 'Effektivität', '%s != "Effektivität"' % (split_result[0])
     assert split_result[1] == 'Berechnung', '%s != "Berechnung"' % (split_result[1])
     assert split_result[2] == 'Formular', '%s != "Formular"' % (split_result[2])
