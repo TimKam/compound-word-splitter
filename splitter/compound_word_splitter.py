@@ -20,7 +20,6 @@ def split(word, language='en_us'):
     max_index = len(word)
     for index, char in enumerate(word):
         left_compound = word[0:max_index-index]
-        print left_compound
         right_compound_1 = word[max_index-index:max_index]
         right_compound_2 = word[max_index-index+1:max_index]
         if right_compound_1:
@@ -41,7 +40,6 @@ def split(word, language='en_us'):
             return [compound for compound in __concat(left_compound, split(right_compound_2, language))\
                     if not compound == '']
     if not word == '' and dictionary.check(word):
-        print 'return'
         return word
     elif not word == '' and dictionary.check(__capitalize_first_char(word)):
         return __capitalize_first_char(word)

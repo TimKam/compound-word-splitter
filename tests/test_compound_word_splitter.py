@@ -27,9 +27,9 @@ def test_split_german_suffix_s():
 
 # should split German compound word that contains a dictionary word that ends with `s`
 def test_split_ends_with_s():
-    split_result = split('Maushäuschen', 'de_de')
+    split_result = split('Mauswurst', 'de_de')
     assert split_result[0] == 'Maus', '%s != "Maus"' % (split_result[0])
-    assert split_result[1]  == u'Häuschen'.encode('utf8'), '%s != "Häuschen"' % (split_result[1])
+    assert split_result[1]  == 'Wurst', '%s != "Wurst"' % (split_result[1])
 
 
 # should split German compound word that consists of three dictionary words

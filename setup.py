@@ -6,7 +6,7 @@ import codecs, setuptools
 setuptools.setup(
     name='compound-word-splitter',
     packages=['splitter'],
-    version='0.1',
+    version='0.2',
     description='Splits compound words, like German "Effektivitätsberechnung',
     author='Timotheus Kampik',
     author_email='timotheus.kampik@gmail.com',
