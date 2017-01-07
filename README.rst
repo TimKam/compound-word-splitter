@@ -1,6 +1,9 @@
 compound-word-splitter
 ======================
 
+.. image:: https://travis-ci.org/TimKam/compound-word-splitter.svg?branch=master
+    :target: https://travis-ci.org/TimKam/compound-word-splitter
+
 Splits words that are not recognized by pyenchant (spell checker) into largest possible compounds.
 
 Installation
