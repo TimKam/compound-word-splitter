@@ -7,6 +7,7 @@ python:
   - "3.5"
 # command to install dependencies
 install:
+  - sudo apt-get install aspell-de
   - sudo apt-get install python-enchant
   - pip install .
   - pip install -r requirements.txt
