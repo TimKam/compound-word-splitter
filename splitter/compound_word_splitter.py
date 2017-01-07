@@ -4,9 +4,9 @@ import enchant
 
 
 def __concat(object1, object2):
-    if isinstance(object1, basestring):
+    if isinstance(object1, str):
         object1 = [object1]
-    if isinstance(object2, basestring):
+    if isinstance(object2, str):
         object2 = [object2]
     return object1 + object2
 
