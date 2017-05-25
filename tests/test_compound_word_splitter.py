@@ -58,5 +58,6 @@ def test_split_incorrectly_capitalized():
     assert split_result == '', '%s != ""' % split_result
 
 # should split unicode strings
-    split_result = split(u'Anlagebuchhalterin', 'de_de')
-    assert split_result == 'Anlage Buchhalterin', '%s != ""' % split_result
+    split_result = split(u'Resultatveröffentlichung', 'de_de')
+    assert split_result[0] == u'Resultat', '%s != "Resultat"' % (split_result[0])
+    assert split_result[1] == u'Veröffentlichung', '%s != "Veröffentlichung"' % (split_result[1])
