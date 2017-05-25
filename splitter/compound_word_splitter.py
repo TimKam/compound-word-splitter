@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import enchant
+import enchant, sys
+
+# to be able to support Python 2 & 3
+if sys.version_info[0] > 2:
+    unicode = str
 
 
 def __concat(object1, object2):
