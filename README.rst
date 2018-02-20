@@ -28,11 +28,12 @@ returns
 
     ['art', 'factory']
     
+.
+    
 .. code:: python
 
     split('Glossarelement', 'de_de')
    
-.
    
 returns
 
