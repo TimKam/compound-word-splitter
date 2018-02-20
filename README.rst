@@ -32,11 +32,15 @@ returns
 
     split('Glossarelement', 'de_de')
    
+.
+   
 returns
 
 .. code:: python
 
     ['Glossar', 'Element']
+    
+.
 
 If the word cannot be split into compounds pyenchant recognizes as words, the splitter returns an empty string.
 
