@@ -14,7 +14,7 @@ setuptools.setup(
     platforms=["any"],
     license="MIT",
     zip_safe=False,
-    install_requires=[],
+    install_requires=['pyenchant'],
     classifiers=[
         "Development Status :: 4 - Beta",
         "Operating System :: OS Independent",
