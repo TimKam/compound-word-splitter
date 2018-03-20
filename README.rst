@@ -9,9 +9,29 @@ Splits words that are not recognized by pyenchant (spell checker) into largest p
 Installation
 ------------
 
+OS X prerequisites:
+For OS X users, you need to install enchant first.
+
+Try installing it with homebrew
+::
+
+    brew install enchant
+
+
+Now run
 ::
 
     pip install compound-word-splitter
+
+
+Note that languages installed by default are: ['en', 'en_CA', 'en_GB', 'en_US']
+If you would like to use 'de_de', like in the example below, you will have to install it.
+
+On GNU/Linux run:
+::
+
+    sudo apt-get install myspell-de-de
+
 
 Usage
 -----
