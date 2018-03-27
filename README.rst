@@ -4,18 +4,12 @@ compound-word-splitter
 .. image:: https://travis-ci.org/TimKam/compound-word-splitter.svg?branch=master
     :target: https://travis-ci.org/TimKam/compound-word-splitter
 
-Splits words that are not recognized by pyenchant (spell checker) into largest possible compounds.
+Splits words that are not recognized by *pyenchant* (spell checker) into largest possible compounds.
 
 Installation
 ------------
 
-OS X prerequisites:
-For OS X users, you need to install enchant first.
-
-Try installing it with homebrew
-::
-
-    brew install enchant
+Make sure you have `enchant <https://www.abisource.com/projects/enchant/>`_ installed before proceeding.
 
 
 Now run
@@ -24,13 +18,15 @@ Now run
     pip install compound-word-splitter
 
 
-Note that languages installed by default are: ['en', 'en_CA', 'en_GB', 'en_US']
-If you would like to use 'de_de', like in the example below, you will have to install it.
+Note that languages installed by default are:
 
-On GNU/Linux run:
-::
+.. code:: python
 
-    sudo apt-get install myspell-de-de
+    ['en', 'en_CA', 'en_GB', 'en_US']
+
+If you would like to use 'de_de', like in the example below, you will have to install
+`myspell <http://www.openoffice.org/lingucomponent/dictionary.html/>`_
+dictionary for it (*myspell-de-de*).
 
 
 Usage
