@@ -18,13 +18,12 @@ Now run
     pip install compound-word-splitter
 
 
-Note that languages installed by default are:
-
-.. code:: python
+Note that the languages that are available by default depend on your operating system's configuration and could be, for
+example::
 
     ['en', 'en_CA', 'en_GB', 'en_US']
 
-If you would like to use 'de_de', like in the example below, you will have to install
+If you would like to use a different language, like ``de_de`` in the example below, you will have to install the
 `myspell <http://www.openoffice.org/lingucomponent/dictionary.html/>`_
 dictionary for it (*myspell-de-de*).
 
