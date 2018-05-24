@@ -44,8 +44,8 @@ def split(word, language='en_us'):
             return [compound for compound in __concat(left_compound, split(right_compound_2, language))\
                     if not compound == '']
     if not word == '' and dictionary.check(word):
-        return word
+        return [word]
     elif not word == '' and dictionary.check(__capitalize_first_char(word)):
-        return __capitalize_first_char(word)
+        return [__capitalize_first_char(word)]
     else:
         return ''
