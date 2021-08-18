@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import enchant, sys
 
 # to be able to support Python 2 & 3
@@ -19,8 +18,10 @@ def __capitalize_first_char(word):
     return word[0].upper() + word[1:]
 
 
-def split(word, language='en_us'):
-    dictionary = enchant.Dict(language)
+def split(word, language='en_us', pwl = ''):
+
+    dictionary = enchant.Dict(language) if pwl == '' else enchant.DictWithPWL(language, pwl)
+    
     max_index = len(word)
     for index, char in enumerate(word):
         left_compound = word[0:max_index-index]
@@ -49,3 +50,4 @@ def split(word, language='en_us'):
         return [__capitalize_first_char(word)]
     else:
         return ''
+
