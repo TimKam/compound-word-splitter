@@ -60,3 +60,10 @@ returns
 
 If the word cannot be split into compounds pyenchant recognizes as words, the splitter returns an empty string.
 
+The language dictionary can be expanded with a personal word list (pwl, see enchant) stored in a separated file:
+
+.. code:: python
+
+    split('Irgendeinwort', 'de_de', pwl='my_dict')
+
+.
